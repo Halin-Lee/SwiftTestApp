@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig>
+    
+    <!-- 模块参数配置 默认配置文件的模块前后顺序会影响模块加载顺序，不可随意改变，远程配置文件不影响（避免远程文件错误改动导致模块无法加载）  -->
+    <ModuleList>
+        
+        <!-- UserDefaults模块   -->
+        <Module name="Fundamental_Tests.DemoConfiguration">
+            <string name="demoField">DemoValue</string>
+        </Module>
+        
+    </ModuleList>
+    
+    
+    <!--UI参数配置-->
+    <UIFeature>
+        <!--不加时间为默认配置-->
+        <bool name="donateEnable">true</bool>
+        <!--加时间在时间范围内会启动，可以只加启动或者只加结束-->
+        <bool name="donateEnable" endDate="2017-03-10 00:00:00" startDate="2017-03-01 00:00:00">false</bool>
+    </UIFeature>
+    
+</SystemConfig>
