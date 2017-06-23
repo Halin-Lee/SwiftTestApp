@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  SwiftApp
+//  AppUIKit
 //
-//  Created by Halin Lee on 5/20/17.
-//  Copyright © 2017 Halin. All rights reserved.
+//  Created by d.halin.lee@gmail.com on 06/23/2017.
+//  Copyright (c) 2017 d.halin.lee@gmail.com. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

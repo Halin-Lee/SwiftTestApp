@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AppUIKit (0.1.0):
+    - Fundamental
+    - SnapKit
+  - Fundamental (0.1.0):
+    - Alamofire
+    - ReactiveCocoa (~> 5.0.0)
+    - SWXMLHash
+  - ReactiveCocoa (5.0.3):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.3):
+    - Result (~> 3.2)
+  - Result (3.2.2)
+  - SnapKit (3.2.0)
+  - SWXMLHash (3.1.0)
+
+DEPENDENCIES:
+  - AppUIKit (from `../../Library/AppUIKit/AppUIKit.podspec`)
+  - Fundamental (from `../../Library/Fundamental/Fundamental.podspec`)
+
+EXTERNAL SOURCES:
+  AppUIKit:
+    :path: ../../Library/AppUIKit/AppUIKit.podspec
+  Fundamental:
+    :path: ../../Library/Fundamental/Fundamental.podspec
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AppUIKit: d3aae22ffb507977679f79243b81190fdeb381ad
+  Fundamental: 821f6e9b994e4a42dc89b161fa8c2ab55ba7332c
+  ReactiveCocoa: 066a855f613fb72f68258771095805fdb10312d2
+  ReactiveSwift: f54ba12c2e799003432930fa55495315ae44f32b
+  Result: 4edd39003fdccf281d418ee1b006571f70123250
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SWXMLHash: d2a672ac416d71099aea91d2b4b9fa871eb09f94
+
+PODFILE CHECKSUM: 7540851c76d2e08516b756e8aabb894fcbf2a3f6
+
+COCOAPODS: 1.2.1

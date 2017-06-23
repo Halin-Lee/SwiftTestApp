@@ -11,6 +11,7 @@ import SWXMLHash
 public class ModuleLoader{
 
     
+    static let TAG = ModuleLoader.self;
     public static let instance = ModuleLoader()
     
     public var moduleDictionary = Dictionary<String,ConfigurableModule>();
