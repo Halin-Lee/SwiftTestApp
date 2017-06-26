@@ -72,7 +72,7 @@ class MainViewController: BaseViewController<MainViewModel> ,ConfigurableViewCon
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let testClass = self.viewModel.testCaseArray[indexPath.section][indexPath.row].testClass
-        _ = Mediator.instance.present(viewControllerClass:testClass , param: nil, animated: true)
+        _ = Mediator.instance.present(controllerClass: testClass, currentVC: self)
         
     }
    

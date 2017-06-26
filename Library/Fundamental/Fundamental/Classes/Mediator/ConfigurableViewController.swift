@@ -17,17 +17,25 @@ public enum ViewControllerPresentType {
 /// 可配置启动参数的VC
 public protocol ConfigurableViewController {
     
-    
-    /// 启动时调用方法
+    /// 收到启动参数
     ///
     /// - Parameter parameters: 启动参数
     func receiveStartParam(parameters:Dictionary<String, Any>)
     
-    
-    /// 回退时调用方法
+    /// 收到返回参数
     ///
-    /// - Parameter parameters: 回退参数
-    func popWithParam(parameters:Dictionary<String, Any>)
+    /// - Parameters:
+    ///   - parameters: 参数
+    ///   - fromRemote: 是否由直系儿子（调用pop）返回
+    func receivePopParam(parameters:Dictionary<String, Any>,fromChild:Bool)
+}
+
+///默认实现
+public extension ConfigurableViewController{
+    
+    func receiveStartParam(parameters:Dictionary<String, Any>){}
+
+    func receivePopParam(parameters:Dictionary<String, Any>,fromChild:Bool){}
 }
 
 
@@ -52,9 +60,10 @@ public protocol DesignableViewController{
     ///
     /// - Returns: <#return value description#>
     func tag() -> String
-
 }
 
+
+///默认实现
 public extension DesignableViewController{
     func viewControllerPresentType() -> ViewControllerPresentType{
         return .PresentTypePush

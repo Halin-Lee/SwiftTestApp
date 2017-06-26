@@ -13,7 +13,12 @@ import UIKit
 
 class MediatorPresentViewController:UIViewController, ConfigurableViewController,DesignableViewController {
     
+    static let TAG = MediatorPresentViewController.self
+    static var index = 1
+    let currentIndex:Int
+    
     required override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        currentIndex = MediatorPresentViewController.index
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -32,78 +37,113 @@ class MediatorPresentViewController:UIViewController, ConfigurableViewController
     
     
     func bind(){
-        self.viewHolder.pushButton
+        self.viewHolder.mediatorPushButton
             .reactive.controlEvents(UIControlEvents.touchUpInside)
             .observe{
-                event in
+                [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.present(viewControllerClass: MediatorPushViewController.self,param:Dictionary());
+                    _ = Mediator.instance.present(controllerClass: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
                 default:
                     return
                 }
         }
         
-        self.viewHolder.presentButton
+        self.viewHolder.mediatorPresentButton
             .reactive.controlEvents(UIControlEvents.touchUpInside)
             .observe{
-                event in
+                [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.present(viewControllerClass: MediatorPresentViewController.self,param:Dictionary());
+                    _ = Mediator.instance.present(controllerClass: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    
                 default:
                     return
                 }
         }
         
+        self.viewHolder.mediatorPopButton
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    _ = Mediator.instance.pop(currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                default:
+                    return
+                }
+        }
+        
+        self.viewHolder.mediatorPopToPushButton
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    _ = Mediator.instance.popTo(class: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                default:
+                    return
+                }
+        }
+        
+        self.viewHolder.mediatorPopToPresentButton
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    _ = Mediator.instance.popTo(class: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                default:
+                    return
+                }
+        }
+        
+        self.viewHolder.mediatorPopToRoot
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    _ = Mediator.instance.popTo(class: MainViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                default:
+                    return
+                }
+        }
+        
+        self.viewHolder.pushSheetButton
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    self!.navigationController?.pushViewController(MediatorSheetViewController(), animated: true)
+                default:
+                    return
+                }
+        }
+        self.viewHolder.presentSheetButton
+            .reactive.controlEvents(UIControlEvents.touchUpInside)
+            .observe{
+                [weak self] event in
+                switch event {
+                case .value:
+                    self!.navigationController?.present(MediatorSheetViewController(), animated: true, completion: nil)
+                default:
+                    return
+                }
+        }
         self.viewHolder.popButton
             .reactive.controlEvents(UIControlEvents.touchUpInside)
             .observe{
-                event in
+                [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.pop(withParam: nil);
+                    self!.navigationController?.popViewController(animated: true)
                 default:
                     return
                 }
         }
-        
-        self.viewHolder.popToPushButton
-            .reactive.controlEvents(UIControlEvents.touchUpInside)
-            .observe{
-                event in
-                switch event {
-                case .value:
-                    _ = Mediator.instance.popTo(viewController: MediatorPushViewController.self,param:Dictionary())
-                default:
-                    return
-                }
-        }
-        
-        self.viewHolder.popToPresentButton
-            .reactive.controlEvents(UIControlEvents.touchUpInside)
-            .observe{
-                event in
-                switch event {
-                case .value:
-                    _ = Mediator.instance.popTo(viewController: MediatorPresentViewController.self,param:Dictionary())
-                default:
-                    return
-                }
-        }
-        
-        self.viewHolder.popToRoot
-            .reactive.controlEvents(UIControlEvents.touchUpInside)
-            .observe{
-                event in
-                switch event {
-                case .value:
-                    _ = Mediator.instance.popTo(viewController: MainViewController.self,param:Dictionary())
-                default:
-                    return
-                }
-        }
-        self.viewHolder.dismiss
+        self.viewHolder.dismissButton
             .reactive.controlEvents(UIControlEvents.touchUpInside)
             .observe{
                 [weak self] event in
@@ -125,9 +165,11 @@ class MediatorPresentViewController:UIViewController, ConfigurableViewController
     }
     
     func receiveStartParam(parameters:Dictionary<String, Any>){
-        
+        print("\(self) receiveStartParam\(parameters)");
     }
     
-    func popWithParam(parameters:Dictionary<String, Any>){}
+    func receivePopParam(parameters:Dictionary<String, Any>,fromChild:Bool){
+        print("\(self) popWithParam\(parameters)");
+    }
     
 }

@@ -11,16 +11,18 @@
 		FF0166301EFD58CB00CF4E9F /* MediatorPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01662F1EFD58CB00CF4E9F /* MediatorPushViewController.swift */; };
 		FF0166321EFD58E400CF4E9F /* MediatorPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0166311EFD58E400CF4E9F /* MediatorPresentViewController.swift */; };
 		FF0166341EFD5A1500CF4E9F /* MediatorViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0166331EFD5A1500CF4E9F /* MediatorViewHolder.swift */; };
+		FF1DCD401EFFB44700582564 /* MediatorSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DCD3F1EFFB44700582564 /* MediatorSheetViewController.swift */; };
+		FF1DCD421EFFC8CF00582564 /* MediatorKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DCD411EFFC8CF00582564 /* MediatorKeys.swift */; };
 		FF1FBA991EFCE54900FD4068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBA981EFCE54900FD4068 /* AppDelegate.swift */; };
 		FF1FBA9B1EFCE5BE00FD4068 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBA9A1EFCE5BE00FD4068 /* MainViewModel.swift */; };
 		FF1FBAA71EFCEDEE00FD4068 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAA61EFCEDEE00FD4068 /* MainViewPresenter.swift */; };
 		FF1FBAC31EFD140500FD4068 /* MainViewController+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */; };
-		FF1FBAC41EFD140500FD4068 /* MainViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC01EFD140500FD4068 /* MainViewController+Navigation.swift */; };
 		FF1FBAC51EFD140500FD4068 /* MainViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */; };
 		FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC21EFD140500FD4068 /* MainViewController.swift */; };
 		FF1FBAC81EFD141F00FD4068 /* MainViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */; };
 		FF1FBACB1EFD24D900FD4068 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACA1EFD24D900FD4068 /* TestItem.swift */; };
 		FF1FBACE1EFD26BC00FD4068 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */; };
+		FF33A4E01F00C9E90052F389 /* MainViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */; };
 		FF53112A1ED0506F0020CA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5311291ED0506F0020CA2C /* Assets.xcassets */; };
 		FF53112D1ED0506F0020CA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF53112B1ED0506F0020CA2C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -32,16 +34,18 @@
 		FF01662F1EFD58CB00CF4E9F /* MediatorPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediatorPushViewController.swift; sourceTree = "<group>"; };
 		FF0166311EFD58E400CF4E9F /* MediatorPresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediatorPresentViewController.swift; sourceTree = "<group>"; };
 		FF0166331EFD5A1500CF4E9F /* MediatorViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediatorViewHolder.swift; sourceTree = "<group>"; };
+		FF1DCD3F1EFFB44700582564 /* MediatorSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediatorSheetViewController.swift; sourceTree = "<group>"; };
+		FF1DCD411EFFC8CF00582564 /* MediatorKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediatorKeys.swift; sourceTree = "<group>"; };
 		FF1FBA981EFCE54900FD4068 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1FBA9A1EFCE5BE00FD4068 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FF1FBAA61EFCEDEE00FD4068 /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Bind.swift"; sourceTree = "<group>"; };
-		FF1FBAC01EFD140500FD4068 /* MainViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Navigation.swift"; sourceTree = "<group>"; };
 		FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI.swift"; sourceTree = "<group>"; };
 		FF1FBAC21EFD140500FD4068 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+DataSource.swift"; sourceTree = "<group>"; };
 		FF1FBACA1EFD24D900FD4068 /* TestItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
 		FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
+		FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MainViewController+Navigation.swift"; path = "../../../../../../../../../../../.Trash/MainViewController+Navigation.swift"; sourceTree = "<group>"; };
 		FF53111F1ED0506F0020CA2C /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5311291ED0506F0020CA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF53112C1ED0506F0020CA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				FF01662F1EFD58CB00CF4E9F /* MediatorPushViewController.swift */,
 				FF0166311EFD58E400CF4E9F /* MediatorPresentViewController.swift */,
 				FF0166331EFD5A1500CF4E9F /* MediatorViewHolder.swift */,
+				FF1DCD3F1EFFB44700582564 /* MediatorSheetViewController.swift */,
+				FF1DCD411EFFC8CF00582564 /* MediatorKeys.swift */,
 			);
 			path = MediatorTest;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */,
-				FF1FBAC01EFD140500FD4068 /* MainViewController+Navigation.swift */,
 				FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */,
+				FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */,
 				FF1FBAC21EFD140500FD4068 /* MainViewController.swift */,
 				FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */,
 			);
@@ -311,12 +317,14 @@
 			files = (
 				FF1FBAC81EFD141F00FD4068 /* MainViewController+DataSource.swift in Sources */,
 				FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */,
+				FF1DCD421EFFC8CF00582564 /* MediatorKeys.swift in Sources */,
 				FF0166341EFD5A1500CF4E9F /* MediatorViewHolder.swift in Sources */,
+				FF1DCD401EFFB44700582564 /* MediatorSheetViewController.swift in Sources */,
 				FF0166301EFD58CB00CF4E9F /* MediatorPushViewController.swift in Sources */,
+				FF33A4E01F00C9E90052F389 /* MainViewController+Navigation.swift in Sources */,
 				FF0166321EFD58E400CF4E9F /* MediatorPresentViewController.swift in Sources */,
 				FF1FBACE1EFD26BC00FD4068 /* HelloWorldViewController.swift in Sources */,
 				FF1FBA991EFCE54900FD4068 /* AppDelegate.swift in Sources */,
-				FF1FBAC41EFD140500FD4068 /* MainViewController+Navigation.swift in Sources */,
 				FF1FBAC31EFD140500FD4068 /* MainViewController+Bind.swift in Sources */,
 				FF1FBAA71EFCEDEE00FD4068 /* MainViewPresenter.swift in Sources */,
 				FF1FBA9B1EFCE5BE00FD4068 /* MainViewModel.swift in Sources */,

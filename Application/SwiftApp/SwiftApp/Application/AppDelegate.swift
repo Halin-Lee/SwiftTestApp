@@ -16,12 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        Logger.setup(logUtil: LogUtilDebug(), isDebug: true)
+        
         // Override point for customization after application launch.
     
         //配置mediator
         let rootVC = MainViewController();
         let mediator = Mediator.instance
-        let rootNav = mediator.setup(rootViewController: rootVC)
+        let rootNav = mediator.setup(rootVC: rootVC)
         
         //配置window
         let window = UIWindow(frame:UIScreen.main.bounds)

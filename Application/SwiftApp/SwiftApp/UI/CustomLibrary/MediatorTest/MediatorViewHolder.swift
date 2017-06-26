@@ -15,70 +15,103 @@ import SnapKit
 /// 负责创建并管理view
 class MediatorViewHolder {
     
-    let pushButton:UIButton
-    let presentButton:UIButton
+    let mediatorPushButton:UIButton
+    let mediatorPresentButton:UIButton
+    let mediatorPopButton:UIButton
+    let mediatorPopToPushButton:UIButton
+    let mediatorPopToPresentButton:UIButton
+    let mediatorPopToRoot:UIButton
+    
+    let pushSheetButton:UIButton
+    let presentSheetButton:UIButton
     let popButton:UIButton
-    let popToPushButton:UIButton
-    let popToPresentButton:UIButton
-    let popToRoot:UIButton
-    let dismiss:UIButton
+    let dismissButton:UIButton
     
     init(parent:UIView) {
-        pushButton = UIButton()
-        presentButton = UIButton()
+        mediatorPushButton = UIButton()
+        mediatorPresentButton = UIButton()
+        mediatorPopButton = UIButton()
+        mediatorPopToPushButton = UIButton()
+        mediatorPopToPresentButton = UIButton()
+        mediatorPopToRoot = UIButton()
+        
+        pushSheetButton = UIButton()
+        presentSheetButton = UIButton()
         popButton = UIButton()
-        popToPushButton = UIButton()
-        popToPresentButton = UIButton()
-        popToRoot = UIButton()
-        dismiss = UIButton()
+        dismissButton = UIButton()
         
-        parent.addSubview(pushButton)
-        parent.addSubview(presentButton)
+        parent.addSubview(mediatorPushButton)
+        parent.addSubview(mediatorPresentButton)
+        parent.addSubview(mediatorPopButton)
+        parent.addSubview(mediatorPopToPushButton)
+        parent.addSubview(mediatorPopToPresentButton)
+        parent.addSubview(mediatorPopToRoot)
+        
+        parent.addSubview(pushSheetButton)
+        parent.addSubview(presentSheetButton)
         parent.addSubview(popButton)
-        parent.addSubview(popToPushButton)
-        parent.addSubview(popToPresentButton)
-        parent.addSubview(popToRoot)
-        parent.addSubview(dismiss)
+        parent.addSubview(dismissButton)
         
-        pushButton.snp.makeConstraints { (make) in
+        mediatorPushButton.snp.makeConstraints { (make) in
             make.width.centerX.equalTo(parent)
             make.top.equalTo(parent).offset(AppDimen.HEIGHT_64)
         }
-        presentButton.snp.makeConstraints { (make) in
+        mediatorPresentButton.snp.makeConstraints { (make) in
             make.width.centerX.equalTo(parent)
-            make.top.equalTo(pushButton.snp.bottom)
+            make.top.equalTo(mediatorPushButton.snp.bottom)
+        }
+        mediatorPopButton.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(mediatorPresentButton.snp.bottom)
+        }
+        mediatorPopToPushButton.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(mediatorPopButton.snp.bottom)
+        }
+        mediatorPopToPresentButton.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(mediatorPopToPushButton.snp.bottom)
+        }
+
+        mediatorPopToRoot.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(mediatorPopToPresentButton.snp.bottom)
+        }
+        
+        pushSheetButton.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(mediatorPopToRoot.snp.bottom)
+        }
+        
+        presentSheetButton.snp.makeConstraints { (make) in
+            make.width.centerX.equalTo(parent)
+            make.top.equalTo(pushSheetButton.snp.bottom)
         }
         popButton.snp.makeConstraints { (make) in
             make.width.centerX.equalTo(parent)
-            make.top.equalTo(presentButton.snp.bottom)
+            make.top.equalTo(presentSheetButton.snp.bottom)
         }
-        popToPushButton.snp.makeConstraints { (make) in
+        dismissButton.snp.makeConstraints { (make) in
             make.width.centerX.equalTo(parent)
             make.top.equalTo(popButton.snp.bottom)
         }
-        popToPresentButton.snp.makeConstraints { (make) in
-            make.width.centerX.equalTo(parent)
-            make.top.equalTo(popToPushButton.snp.bottom)
-        }
-
-        popToRoot.snp.makeConstraints { (make) in
-            make.width.centerX.equalTo(parent)
-            make.top.equalTo(popToPresentButton.snp.bottom)
-        }
         
-        dismiss.snp.makeConstraints { (make) in
-            make.width.centerX.equalTo(parent)
-            make.top.equalTo(popToRoot.snp.bottom)
-        }
+        setTitle(string: "Mediator Push", button: mediatorPushButton)
+        setTitle(string: "Mediator Present", button: mediatorPresentButton)
+        setTitle(string: "Mediator Pop", button: mediatorPopButton)
+        setTitle(string: "Mediator Pop To Push", button: mediatorPopToPushButton)
+        setTitle(string: "Mediator Pop To Present", button: mediatorPopToPresentButton)
+        setTitle(string: "Mediator Pop To Root", button: mediatorPopToRoot)
+        setTitle(string: "Push Sheet", button: pushSheetButton)
+        setTitle(string: "Present Sheet", button: presentSheetButton)
+        setTitle(string: "Pop", button: popButton)
+        setTitle(string: "Dismiss", button: dismissButton)
         
-        
-        pushButton.setAttributedTitle("Push".attributeString(), for: .normal)
-        presentButton.setAttributedTitle("Present".attributeString(), for: .normal)
-        popButton.setAttributedTitle("popButton".attributeString(), for: .normal)
-        popToPushButton.setAttributedTitle("popToPushButton".attributeString(), for: .normal)
-        popToPresentButton.setAttributedTitle("popToPresentButton".attributeString(), for: .normal)
-        popToRoot.setAttributedTitle("popToRoot".attributeString(), for: .normal)
-        dismiss.setAttributedTitle("dismiss".attributeString(), for: .normal)
+    
+    }
+    
+    func setTitle(string:String,button:UIButton){
+        button.setAttributedTitle(string.attributeString(), for: .normal)
     }
     
     required init?(coder aDecoder: NSCoder) {
