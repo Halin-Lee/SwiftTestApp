@@ -11,11 +11,11 @@ import Foundation
 public class GlobalConfiguration: ConfigurableModule {
     
     static let configurationFileName = "SystemConfiguration"
-    static let DEFAULT_APP_GROUP = "group.me.halin";
-    static let DEFAULT_RESOURCE_PATH = "resource";
+    static let defaultAppGroup = "group.me.halin";
+    static let defaultResourcePath = "resource";
     static let TAG = String(describing:type(of: GlobalConfiguration.self));
-    var appGroupId = DEFAULT_APP_GROUP
-    var appFilePath = DEFAULT_RESOURCE_PATH
+    var appGroupId = defaultAppGroup
+    var appFilePath = defaultResourcePath
     public required init() {
         super.init()
         appGroupId = self.defaultAppGroupID()
@@ -42,7 +42,7 @@ public class GlobalConfiguration: ConfigurableModule {
             }
         }
         
-        return GlobalConfiguration.DEFAULT_RESOURCE_PATH
+        return GlobalConfiguration.defaultResourcePath
     }
     
     

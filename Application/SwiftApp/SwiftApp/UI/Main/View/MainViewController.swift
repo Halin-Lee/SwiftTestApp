@@ -11,14 +11,12 @@ import Fundamental
 import AppUIKit
 
 
-class MainViewController: BaseViewController<MainViewModel> ,ConfigurableViewController,DesignableViewController,UITableViewDelegate,UITableViewDataSource{
+class MainViewController: BaseViewController<MainViewModel> ,ConfigurableViewController,DesignableViewController{
     
-    
-    static let ReuseId = "ReuseId"
     
     var navigationBar:UIView!
     var table:UITableView!
-    
+    var dataSource:MainViewDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,43 +37,15 @@ class MainViewController: BaseViewController<MainViewModel> ,ConfigurableViewCon
             make.left.right.bottom.equalTo(view)
             make.top.equalTo(navigationBar.snp.bottom)
         }
-        table.delegate = self
-        table.dataSource = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: MainViewController.ReuseId)
+        dataSource = MainViewDataSource(controller:self,viewModel:viewModel, table: table)
+        
+        
     }
     
     open override func createViewModel() -> MainViewModel{
         return MainViewModel()
     }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.viewModel.testCaseArray[section].first?.testGroup;
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.ReuseId)!
-        cell.textLabel?.text = self.viewModel.testCaseArray[indexPath.section][indexPath.row].testName
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return AppDimen.HEIGHT_40
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.viewModel.testCaseArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.testCaseArray[section].count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let testClass = self.viewModel.testCaseArray[indexPath.section][indexPath.row].testClass
-        _ = Mediator.instance.present(controllerClass: testClass, currentVC: self)
-        
-    }
-   
+ 
 }
 
 

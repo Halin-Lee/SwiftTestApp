@@ -10,6 +10,7 @@ import Foundation
 import SnapKit
 
 
+/// 自定义的导航栏
 open class AppNavigation: UIView {
     
     public convenience init(parent:UIView) {
@@ -25,7 +26,7 @@ open class AppNavigation: UIView {
     
     required public init() {
         super.init(frame:CGRect())
-        self.backgroundColor = AppColor.COLOR_BLUE_100
+        self.backgroundColor = AppColor.Color_Blue_100
     }
     
     required public init?(coder aDecoder: NSCoder) {

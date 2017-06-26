@@ -13,32 +13,34 @@ import SnapKit
 
 
 /// 负责创建并管理view
-class MediatorViewHolder {
+class MediatorViewHolder : ViewHolder{
     
-    let mediatorPushButton:UIButton
-    let mediatorPresentButton:UIButton
-    let mediatorPopButton:UIButton
-    let mediatorPopToPushButton:UIButton
-    let mediatorPopToPresentButton:UIButton
-    let mediatorPopToRoot:UIButton
+    unowned let mediatorPushButton:UIButton
+    unowned let mediatorPresentButton:UIButton
+    unowned let mediatorPopButton:UIButton
+    unowned let mediatorPopToPushButton:UIButton
+    unowned let mediatorPopToPresentButton:UIButton
+    unowned let mediatorPopToRoot:UIButton
     
-    let pushSheetButton:UIButton
-    let presentSheetButton:UIButton
-    let popButton:UIButton
-    let dismissButton:UIButton
+    unowned let pushSheetButton:UIButton
+    unowned let presentSheetButton:UIButton
+    unowned let popButton:UIButton
+    unowned let dismissButton:UIButton
     
-    init(parent:UIView) {
-        mediatorPushButton = UIButton()
-        mediatorPresentButton = UIButton()
-        mediatorPopButton = UIButton()
-        mediatorPopToPushButton = UIButton()
-        mediatorPopToPresentButton = UIButton()
-        mediatorPopToRoot = UIButton()
+    required init(parent:UIView) {
+        mediatorPushButton = UIButton(parent:parent)
+        mediatorPresentButton = UIButton(parent:parent)
+        mediatorPopButton = UIButton(parent:parent)
+        mediatorPopToPushButton = UIButton(parent:parent)
+        mediatorPopToPresentButton = UIButton(parent:parent)
+        mediatorPopToRoot = UIButton(parent:parent)
         
-        pushSheetButton = UIButton()
-        presentSheetButton = UIButton()
-        popButton = UIButton()
-        dismissButton = UIButton()
+        pushSheetButton = UIButton(parent:parent)
+        presentSheetButton = UIButton(parent:parent)
+        popButton = UIButton(parent:parent)
+        dismissButton = UIButton(parent:parent)
+        
+        super.init(parent: parent)
         
         parent.addSubview(mediatorPushButton)
         parent.addSubview(mediatorPresentButton)

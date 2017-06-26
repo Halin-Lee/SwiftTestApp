@@ -44,7 +44,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.present(controllerClass: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.present(controllerClass: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                 default:
                     return
                 }
@@ -56,7 +56,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.present(controllerClass: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.present(controllerClass: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                     
                 default:
                     return
@@ -69,7 +69,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.pop(currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.pop(currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                 default:
                     return
                 }
@@ -81,7 +81,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.popTo(class: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.popTo(class: MediatorPushViewController.self, currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                 default:
                     return
                 }
@@ -93,7 +93,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.popTo(class: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.popTo(class: MediatorPresentViewController.self, currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                 default:
                     return
                 }
@@ -105,7 +105,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
                 [weak self] event in
                 switch event {
                 case .value:
-                    _ = Mediator.instance.popTo(class: MainViewController.self, currentVC: self!, param: [MediatorKeys.FROM:self!.currentIndex])
+                    _ = Mediator.instance.popTo(class: MainViewController.self, currentVC: self!, param: [MediatorKeys.from:self!.currentIndex])
                 default:
                     return
                 }

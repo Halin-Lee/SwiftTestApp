@@ -10,6 +10,6 @@ import Foundation
 
 class MediatorKeys{
 
-    static let FROM = "From"
-    static let CURRENT = "CURRENT"
+    static let from = "From"
+    static let current = "CURRENT"
 }

@@ -17,12 +17,14 @@
 		FF1FBA9B1EFCE5BE00FD4068 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBA9A1EFCE5BE00FD4068 /* MainViewModel.swift */; };
 		FF1FBAA71EFCEDEE00FD4068 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAA61EFCEDEE00FD4068 /* MainViewPresenter.swift */; };
 		FF1FBAC31EFD140500FD4068 /* MainViewController+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */; };
-		FF1FBAC51EFD140500FD4068 /* MainViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */; };
 		FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC21EFD140500FD4068 /* MainViewController.swift */; };
-		FF1FBAC81EFD141F00FD4068 /* MainViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */; };
+		FF1FBAC81EFD141F00FD4068 /* MainViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */; };
 		FF1FBACB1EFD24D900FD4068 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACA1EFD24D900FD4068 /* TestItem.swift */; };
 		FF1FBACE1EFD26BC00FD4068 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */; };
 		FF33A4E01F00C9E90052F389 /* MainViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */; };
+		FF33A4E71F00D9E00052F389 /* ShadowTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4E61F00D9E00052F389 /* ShadowTestViewController.swift */; };
+		FF33A4E91F00DA940052F389 /* ShadowTestViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4E81F00DA940052F389 /* ShadowTestViewHolder.swift */; };
+		FF33A4ED1F00E4DB0052F389 /* ShadowTestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4EC1F00E4DB0052F389 /* ShadowTestDataSource.swift */; };
 		FF53112A1ED0506F0020CA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5311291ED0506F0020CA2C /* Assets.xcassets */; };
 		FF53112D1ED0506F0020CA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF53112B1ED0506F0020CA2C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -40,12 +42,14 @@
 		FF1FBA9A1EFCE5BE00FD4068 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FF1FBAA61EFCEDEE00FD4068 /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Bind.swift"; sourceTree = "<group>"; };
-		FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI.swift"; sourceTree = "<group>"; };
 		FF1FBAC21EFD140500FD4068 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+DataSource.swift"; sourceTree = "<group>"; };
+		FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewDataSource.swift; sourceTree = "<group>"; };
 		FF1FBACA1EFD24D900FD4068 /* TestItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
 		FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 		FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MainViewController+Navigation.swift"; path = "../../../../../../../../../../../.Trash/MainViewController+Navigation.swift"; sourceTree = "<group>"; };
+		FF33A4E61F00D9E00052F389 /* ShadowTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestViewController.swift; sourceTree = "<group>"; };
+		FF33A4E81F00DA940052F389 /* ShadowTestViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestViewHolder.swift; sourceTree = "<group>"; };
+		FF33A4EC1F00E4DB0052F389 /* ShadowTestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestDataSource.swift; sourceTree = "<group>"; };
 		FF53111F1ED0506F0020CA2C /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5311291ED0506F0020CA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF53112C1ED0506F0020CA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,10 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */,
-				FF1FBAC11EFD140500FD4068 /* MainViewController+UI.swift */,
 				FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */,
 				FF1FBAC21EFD140500FD4068 /* MainViewController.swift */,
-				FF1FBAC71EFD141F00FD4068 /* MainViewController+DataSource.swift */,
+				FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,11 +156,22 @@
 		FF1FBACC1EFD26AF00FD4068 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				FF33A4E51F00D9E00052F389 /* ShadowTest */,
 				FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */,
 			);
 			name = Test;
 			path = SwiftApp/UI/Test;
 			sourceTree = SOURCE_ROOT;
+		};
+		FF33A4E51F00D9E00052F389 /* ShadowTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF33A4E61F00D9E00052F389 /* ShadowTestViewController.swift */,
+				FF33A4E81F00DA940052F389 /* ShadowTestViewHolder.swift */,
+				FF33A4EC1F00E4DB0052F389 /* ShadowTestDataSource.swift */,
+			);
+			path = ShadowTest;
+			sourceTree = "<group>";
 		};
 		FF5311161ED0506F0020CA2C = {
 			isa = PBXGroup;
@@ -315,7 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF1FBAC81EFD141F00FD4068 /* MainViewController+DataSource.swift in Sources */,
+				FF1FBAC81EFD141F00FD4068 /* MainViewDataSource.swift in Sources */,
+				FF33A4ED1F00E4DB0052F389 /* ShadowTestDataSource.swift in Sources */,
+				FF33A4E91F00DA940052F389 /* ShadowTestViewHolder.swift in Sources */,
 				FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */,
 				FF1DCD421EFFC8CF00582564 /* MediatorKeys.swift in Sources */,
 				FF0166341EFD5A1500CF4E9F /* MediatorViewHolder.swift in Sources */,
@@ -328,7 +344,7 @@
 				FF1FBAC31EFD140500FD4068 /* MainViewController+Bind.swift in Sources */,
 				FF1FBAA71EFCEDEE00FD4068 /* MainViewPresenter.swift in Sources */,
 				FF1FBA9B1EFCE5BE00FD4068 /* MainViewModel.swift in Sources */,
-				FF1FBAC51EFD140500FD4068 /* MainViewController+UI.swift in Sources */,
+				FF33A4E71F00D9E00052F389 /* ShadowTestViewController.swift in Sources */,
 				FF1FBACB1EFD24D900FD4068 /* TestItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
