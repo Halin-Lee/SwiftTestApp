@@ -9,4 +9,6 @@ target 'SwiftApp' do
   pod 'Fundamental', :path => '../../Library/Fundamental/Fundamental.podspec'
   
   pod 'AppUIKit', :path => '../../Library/AppUIKit/AppUIKit.podspec'
+  
+  pod 'GoogleAnalytics'
 end

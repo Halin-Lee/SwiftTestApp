@@ -29,6 +29,7 @@
 		FF69A0331F061E46006F7674 /* TrackMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0301F061E46006F7674 /* TrackMainDataSource.swift */; };
 		FF69A0341F061E46006F7674 /* TrackMainViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */; };
 		FF69A0351F061E46006F7674 /* TrackMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0321F061E46006F7674 /* TrackMainViewController.swift */; };
+		FF69A0381F0628E1006F7674 /* LogUtilGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0371F0628E1006F7674 /* LogUtilGoogle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		FF69A0301F061E46006F7674 /* TrackMainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainDataSource.swift; sourceTree = "<group>"; };
 		FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainViewHolder.swift; sourceTree = "<group>"; };
 		FF69A0321F061E46006F7674 /* TrackMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainViewController.swift; sourceTree = "<group>"; };
+		FF69A0371F0628E1006F7674 /* LogUtilGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtilGoogle.swift; sourceTree = "<group>"; };
+		FF69A0391F06297D006F7674 /* OCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				FF1FBA981EFCE54900FD4068 /* AppDelegate.swift */,
+				FF69A0391F06297D006F7674 /* OCBridge.h */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 		FF5311211ED0506F0020CA2C /* SwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF69A0361F0628B3006F7674 /* Fundamental */,
 				FF1FBACC1EFD26AF00FD4068 /* Test */,
 				FF1FBA971EFCE54900FD4068 /* Application */,
 				FF1FBA8F1EFCBEE500FD4068 /* CustomLibrary */,
@@ -234,6 +239,14 @@
 				FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */,
 			);
 			path = Phone;
+			sourceTree = "<group>";
+		};
+		FF69A0361F0628B3006F7674 /* Fundamental */ = {
+			isa = PBXGroup;
+			children = (
+				FF69A0371F0628E1006F7674 /* LogUtilGoogle.swift */,
+			);
+			path = Fundamental;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +375,7 @@
 				FF1FBAC81EFD141F00FD4068 /* MainViewDataSource.swift in Sources */,
 				FF69A0351F061E46006F7674 /* TrackMainViewController.swift in Sources */,
 				FF33A4ED1F00E4DB0052F389 /* ShadowTestDataSource.swift in Sources */,
+				FF69A0381F0628E1006F7674 /* LogUtilGoogle.swift in Sources */,
 				FF33A4E91F00DA940052F389 /* ShadowTestViewHolder.swift in Sources */,
 				FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */,
 				FF1DCD421EFFC8CF00582564 /* MediatorKeys.swift in Sources */,
@@ -501,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.halin.SwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./SwiftApp/Application/OCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -516,6 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.halin.SwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./SwiftApp/Application/OCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
