@@ -21,12 +21,14 @@
 		FF1FBAC81EFD141F00FD4068 /* MainViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */; };
 		FF1FBACB1EFD24D900FD4068 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACA1EFD24D900FD4068 /* TestItem.swift */; };
 		FF1FBACE1EFD26BC00FD4068 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */; };
-		FF33A4E01F00C9E90052F389 /* MainViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */; };
 		FF33A4E71F00D9E00052F389 /* ShadowTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4E61F00D9E00052F389 /* ShadowTestViewController.swift */; };
 		FF33A4E91F00DA940052F389 /* ShadowTestViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4E81F00DA940052F389 /* ShadowTestViewHolder.swift */; };
 		FF33A4ED1F00E4DB0052F389 /* ShadowTestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33A4EC1F00E4DB0052F389 /* ShadowTestDataSource.swift */; };
 		FF53112A1ED0506F0020CA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5311291ED0506F0020CA2C /* Assets.xcassets */; };
 		FF53112D1ED0506F0020CA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF53112B1ED0506F0020CA2C /* LaunchScreen.storyboard */; };
+		FF69A0331F061E46006F7674 /* TrackMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0301F061E46006F7674 /* TrackMainDataSource.swift */; };
+		FF69A0341F061E46006F7674 /* TrackMainViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */; };
+		FF69A0351F061E46006F7674 /* TrackMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69A0321F061E46006F7674 /* TrackMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +48,6 @@
 		FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewDataSource.swift; sourceTree = "<group>"; };
 		FF1FBACA1EFD24D900FD4068 /* TestItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
 		FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
-		FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MainViewController+Navigation.swift"; path = "../../../../../../../../../../../.Trash/MainViewController+Navigation.swift"; sourceTree = "<group>"; };
 		FF33A4E61F00D9E00052F389 /* ShadowTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestViewController.swift; sourceTree = "<group>"; };
 		FF33A4E81F00DA940052F389 /* ShadowTestViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestViewHolder.swift; sourceTree = "<group>"; };
 		FF33A4EC1F00E4DB0052F389 /* ShadowTestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTestDataSource.swift; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		FF5311291ED0506F0020CA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF53112C1ED0506F0020CA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF53112E1ED0506F0020CA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF69A0301F061E46006F7674 /* TrackMainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainDataSource.swift; sourceTree = "<group>"; };
+		FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainViewHolder.swift; sourceTree = "<group>"; };
+		FF69A0321F061E46006F7674 /* TrackMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				FF1FBABF1EFD140500FD4068 /* MainViewController+Bind.swift */,
-				FF33A4DF1F00C9E90052F389 /* MainViewController+Navigation.swift */,
 				FF1FBAC21EFD140500FD4068 /* MainViewController.swift */,
 				FF1FBAC71EFD141F00FD4068 /* MainViewDataSource.swift */,
 			);
@@ -156,6 +159,7 @@
 		FF1FBACC1EFD26AF00FD4068 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				FF69A02D1F061E46006F7674 /* TrackMain */,
 				FF33A4E51F00D9E00052F389 /* ShadowTest */,
 				FF1FBACD1EFD26BC00FD4068 /* HelloWorldViewController.swift */,
 			);
@@ -204,6 +208,32 @@
 				FF53112E1ED0506F0020CA2C /* Info.plist */,
 			);
 			path = SwiftApp;
+			sourceTree = "<group>";
+		};
+		FF69A02D1F061E46006F7674 /* TrackMain */ = {
+			isa = PBXGroup;
+			children = (
+				FF69A02E1F061E46006F7674 /* View */,
+			);
+			path = TrackMain;
+			sourceTree = "<group>";
+		};
+		FF69A02E1F061E46006F7674 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF69A02F1F061E46006F7674 /* Phone */,
+				FF69A0321F061E46006F7674 /* TrackMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF69A02F1F061E46006F7674 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				FF69A0301F061E46006F7674 /* TrackMainDataSource.swift */,
+				FF69A0311F061E46006F7674 /* TrackMainViewHolder.swift */,
+			);
+			path = Phone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,19 +360,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1FBAC81EFD141F00FD4068 /* MainViewDataSource.swift in Sources */,
+				FF69A0351F061E46006F7674 /* TrackMainViewController.swift in Sources */,
 				FF33A4ED1F00E4DB0052F389 /* ShadowTestDataSource.swift in Sources */,
 				FF33A4E91F00DA940052F389 /* ShadowTestViewHolder.swift in Sources */,
 				FF1FBAC61EFD140500FD4068 /* MainViewController.swift in Sources */,
 				FF1DCD421EFFC8CF00582564 /* MediatorKeys.swift in Sources */,
 				FF0166341EFD5A1500CF4E9F /* MediatorViewHolder.swift in Sources */,
 				FF1DCD401EFFB44700582564 /* MediatorSheetViewController.swift in Sources */,
+				FF69A0331F061E46006F7674 /* TrackMainDataSource.swift in Sources */,
 				FF0166301EFD58CB00CF4E9F /* MediatorPushViewController.swift in Sources */,
-				FF33A4E01F00C9E90052F389 /* MainViewController+Navigation.swift in Sources */,
 				FF0166321EFD58E400CF4E9F /* MediatorPresentViewController.swift in Sources */,
 				FF1FBACE1EFD26BC00FD4068 /* HelloWorldViewController.swift in Sources */,
 				FF1FBA991EFCE54900FD4068 /* AppDelegate.swift in Sources */,
 				FF1FBAC31EFD140500FD4068 /* MainViewController+Bind.swift in Sources */,
 				FF1FBAA71EFCEDEE00FD4068 /* MainViewPresenter.swift in Sources */,
+				FF69A0341F061E46006F7674 /* TrackMainViewHolder.swift in Sources */,
 				FF1FBA9B1EFCE5BE00FD4068 /* MainViewModel.swift in Sources */,
 				FF33A4E71F00D9E00052F389 /* ShadowTestViewController.swift in Sources */,
 				FF1FBACB1EFD24D900FD4068 /* TestItem.swift in Sources */,

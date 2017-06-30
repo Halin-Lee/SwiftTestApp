@@ -52,7 +52,7 @@ public class Mediator{
             backDictionary.setObject(currentVC, forKey: controller)
         }
         
-        var presentType = ViewControllerPresentType.PresentTypePush
+        var presentType = ViewControllerPresentType.push
         if controller is ConfigurableViewController {
             let configuarbleVC = controller as! ConfigurableViewController
             //设置参数，获得呈现方式
@@ -74,11 +74,11 @@ public class Mediator{
             topController = topController!.presentedViewController
         }
         switch presentType {
-        case .PresentTypePresent:
+        case .present:
             //使用Present方式呈现VC
             let newNav = UINavigationController.init(rootViewController: controller)
             topController!.present(newNav, animated: animated, completion: nil)
-        case .PresentTypePush:
+        case .push:
             //使用Push方式呈现VC
             (topController as! UINavigationController).pushViewController(controller, animated: animated)
         }

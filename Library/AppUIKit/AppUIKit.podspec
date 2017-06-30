@@ -38,6 +38,7 @@ TODO: Add long description of the pod here.
 
   s.dependency 'Fundamental'
   s.dependency 'SnapKit'
+  s.dependency 'MaterialComponents'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

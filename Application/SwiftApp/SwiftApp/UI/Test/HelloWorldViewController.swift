@@ -27,7 +27,7 @@ class HelloWorldViewController: UIViewController,ConfigurableViewController,Desi
     }
     
     func viewControllerPresentType() -> ViewControllerPresentType{
-        return ViewControllerPresentType.PresentTypePush
+        return ViewControllerPresentType.push
     }
     
     func isHideNavigationBar() -> Bool {

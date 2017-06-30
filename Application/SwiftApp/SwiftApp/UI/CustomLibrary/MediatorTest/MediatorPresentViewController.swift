@@ -157,7 +157,7 @@ class MediatorPresentViewController:UIViewController, ConfigurableViewController
     }
     
     func viewControllerPresentType() -> ViewControllerPresentType{
-        return .PresentTypePresent
+        return .present
     }
     
     func isHideNavigationBar() -> Bool {

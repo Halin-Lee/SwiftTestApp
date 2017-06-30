@@ -160,7 +160,7 @@ class MediatorPushViewController:UIViewController, ConfigurableViewController ,D
     
     
     func viewControllerPresentType() -> ViewControllerPresentType{
-        return .PresentTypePush
+        return .push
     }
     
     func isHideNavigationBar() -> Bool {

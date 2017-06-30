@@ -26,7 +26,7 @@ open class AppNavigation: UIView {
     
     required public init() {
         super.init(frame:CGRect())
-        self.backgroundColor = AppColor.Color_Blue_100
+        self.backgroundColor = AppColor.Color_Blue
     }
     
     required public init?(coder aDecoder: NSCoder) {

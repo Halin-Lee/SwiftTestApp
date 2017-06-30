@@ -9,8 +9,8 @@
 import Foundation
 
 public enum ViewControllerPresentType {
-    case PresentTypePresent
-    case PresentTypePush
+    case present
+    case push
 }
 
 
@@ -66,7 +66,7 @@ public protocol DesignableViewController{
 ///默认实现
 public extension DesignableViewController{
     func viewControllerPresentType() -> ViewControllerPresentType{
-        return .PresentTypePush
+        return .push
     }
     
     

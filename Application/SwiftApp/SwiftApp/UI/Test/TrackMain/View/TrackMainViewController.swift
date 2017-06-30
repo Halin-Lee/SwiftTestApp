@@ -1,5 +1,5 @@
 //
-//  ViewShadowTestViewController.swift
+//  TrackMainViewController.swift
 //  SwiftApp
 //
 //  Created by Halin Lee on 6/26/17.
@@ -7,14 +7,14 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
 import Fundamental
+import MaterialComponents
 
-class ShadowTestViewController: UIViewController,ConfigurableViewController,DesignableViewController {
+
+class TrackMainViewController: UIViewController,ConfigurableViewController,DesignableViewController {
     
-    var viewHolder:ShadowTestViewHolder!
+    var viewHolder:TrackMainViewHolder!
     
     required override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,7 +27,7 @@ class ShadowTestViewController: UIViewController,ConfigurableViewController,Desi
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        viewHolder = ShadowTestViewHolder(parent:self.view)
+        viewHolder = TrackMainViewHolder(parent:self.view)
     }
     
     func viewControllerPresentType() -> ViewControllerPresentType{
