@@ -17,8 +17,7 @@ class MainViewModel: BaseViewModel {
         testCaseArray = [[TestItem(testName:"Hello World",testClass:HelloWorldViewController.self)],
                          [TestItem(testName:"Push",testGroup:"MediatorTest",testClass:MediatorPushViewController.self),
                           TestItem(testName:"Present",testGroup:"MediatorTest",testClass:MediatorPresentViewController.self)],
-                         [TestItem(testName:"Shadow Test",testClass:ShadowTestViewController.self)],
-                         [TestItem(testName:"Main Test",testClass:TrackMainViewController.self)],]
+                         [TestItem(testName:"Shadow Test",testClass:ShadowTestViewController.self)],]
         super.init()
     }
     

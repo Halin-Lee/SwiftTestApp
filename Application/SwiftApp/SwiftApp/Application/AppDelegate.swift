@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Logger.setup(logUtil: LogUtilDebug(), isDebug: true)
         
+        ReactiveSwiftTest.start()
+        
         // Override point for customization after application launch.
     
         //配置mediator

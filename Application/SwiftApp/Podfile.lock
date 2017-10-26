@@ -8,7 +8,6 @@ PODS:
     - Alamofire
     - ReactiveCocoa (~> 5.0.0)
     - SWXMLHash
-  - GoogleAnalytics (3.17.0)
   - MaterialComponents (25.1.1):
     - MaterialComponents/ActivityIndicator (= 25.1.1)
     - MaterialComponents/AnimationTiming (= 25.1.1)
@@ -293,12 +292,12 @@ PODS:
     - Result (~> 3.2)
   - Result (3.2.2)
   - SnapKit (3.2.0)
-  - SWXMLHash (3.1.0)
+  - SWXMLHash (4.2.3)
 
 DEPENDENCIES:
   - AppUIKit (from `../../Library/AppUIKit/AppUIKit.podspec`)
   - Fundamental (from `../../Library/Fundamental/Fundamental.podspec`)
-  - GoogleAnalytics
+  - ReactiveCocoa
 
 EXTERNAL SOURCES:
   AppUIKit:
@@ -310,15 +309,14 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AppUIKit: 7e2a0e0d6c78beeafe5d98f2f07f0444939ec911
   Fundamental: 821f6e9b994e4a42dc89b161fa8c2ab55ba7332c
-  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   MaterialComponents: 269f677006e18f72c0a32b7e00a901851835124c
   MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
   ReactiveCocoa: 066a855f613fb72f68258771095805fdb10312d2
   ReactiveSwift: f54ba12c2e799003432930fa55495315ae44f32b
   Result: 4edd39003fdccf281d418ee1b006571f70123250
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  SWXMLHash: d2a672ac416d71099aea91d2b4b9fa871eb09f94
+  SWXMLHash: 6ab10e1cb4567d88cd3634be0bf331a7839945dd
 
-PODFILE CHECKSUM: 25f89e3062bf0db962d5ecf427f097191421721a
+PODFILE CHECKSUM: 2ece0910cf1d14d592a5dc00457bb5697b26bc8d
 
 COCOAPODS: 1.2.1

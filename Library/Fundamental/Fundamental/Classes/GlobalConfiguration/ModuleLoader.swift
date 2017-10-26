@@ -27,9 +27,8 @@ public class ModuleLoader{
         let pathURL = bundle.url(forResource: name, withExtension: "xml");
 
         let data = try? Data(contentsOf:pathURL!)
-        let xml = SWXMLHash.lazy(data!);
-        
-        for elem in xml["SystemConfig"]["ModuleList"]["Module"] {
+        let xml = SWXMLHash.lazy(data!)
+        for elem in xml["SystemConfig"]["ModuleList"]["Module"].all {
             let moduleName = elem.element?.attribute(by: "name")?.text;
             if (moduleName != nil) {
                 let module = self.createInstance(fromClass: moduleName!);
